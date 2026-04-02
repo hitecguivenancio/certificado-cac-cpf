@@ -3,23 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAC PF</title>
+    <title>Certificado CAC - Polícia Federal</title>
     <style>
-        body { font-family: Arial; background: #f0f0f0; text-align: center; padding: 50px; }
-        .cert { background: #003366; color: white; max-width: 600px; margin: 0 auto; padding: 30px; border-radius: 10px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #003366 0%, #0056b3 50%, #007acc 100%); 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px; 
+        }
+        .certificado { 
+            background: rgba(255,255,255,0.95); 
+            backdrop-filter: blur(10px); 
+            border-radius: 20px; 
+            padding: 40px; 
+            max-width: 500px; 
+            width: 100%; 
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3); 
+            text-align: center; 
+            border: 3px solid #003366; 
+        }
+        .header { 
+            background: #003366; 
+            color: white; 
+            padding: 20px; 
+            border-radius: 15px 15px 0 0; 
+            margin: -40px -40px 30px -40px; 
+        }
+        .header h1 { font-size: 1.4rem; margin: 0; }
+        .header p { font-size: 0.9rem; opacity: 0.9; margin: 5px 0 0; }
+        .dados { 
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); 
+            border-radius: 15px; 
+            padding: 25px; 
+            margin: 20px 0; 
+        }
+        .dado { 
+            display: flex; 
+            justify-content: space-between; 
+            margin: 15px 0; 
+            font-size: 1.1rem; 
+            font-weight: 600; 
+        }
+        .dado-label { color: #003366; }
+        .dado-valor { color: #0056b3; background: white; padding: 8px 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .rodape { 
+            font-size: 0.85rem; 
+            color: #666; 
+            margin-top: 25px; 
+            border-top: 1px solid #ddd; 
+            padding-top: 15px; 
+        }
+        @media (max-width: 600px) { 
+            .certificado { padding: 30px 20px; } 
+            .dado { flex-direction: column; text-align: left; }
+            .dado-valor { margin-top: 5px; }
+        }
     </style>
 </head>
 <body>
-    <div class="cert">
-        <h2>CERTIFICADO DE REGISTRO - CAC</h2>
-        <p><strong>NOME:</strong> GUILHERME VENANCIO</p>
-        <p><strong>CPF:</strong> 139.635.407-70</p>
-        <p><strong>NÚMERO CR:</strong> 45706085002024</p>
-        <p><strong>VINCULADO:</strong> SR-PF-ES</p>
-        <p><strong>VALIDADE:</strong> 06-08-2034</p>
-        <p><strong>SITUAÇÃO NA JUNTA MILITAR:</strong> APROVADO</p>
-        <p><strong>VERIFICAÇÃO NO SisGCorp:</strong> 0aooo00000gdoondbrjdooo148500000e0</p>
+    <div class="certificado">
+        <div class="header">
+            <h1>🏛️ POLÍCIA FEDERAL</h1>
+            <p>Superintendência Regional - ES<br>Certificado de Registro CAC</p>
+        </div>
+        
+        <div class="dados">
+            <div class="dado">
+                <span class="dado-label">NOME:</span>
+                <span class="dado-valor">GUILHERME VENANCIO</span>
+            </div>
+            <div class="dado">
+                <span class="dado-label">CPF:</span>
+                <span class="dado-valor">139.635.407-70</span>
+            </div>
+            <div class="dado">
+                <span class="dado-label">NÚMERO CR:</span>
+                <span class="dado-valor">45706085002024</span>
+            </div>
+            <div class="dado">
+                <span class="dado-label">VINCULADO:</span>
+                <span class="dado-valor">SR-PF-ES</span>
+            </div>
+            <div class="dado">
+                <span class="dado-label">VALIDADE:</span>
+                <span class="dado-valor">06-08-2034</span>
+            </div>
+            <div class="dado">
+                <span class="dado-label">SITUAÇÃO JM:</span>
+                <span class="dado-valor">APROVADO ✅</span>
+            </div>
+            <div class="dado">
+                <span class="dado-label">VERIFICAÇÃO SisGCorp:</span>
+                <span class="dado-valor">0aooo00000gdoondbrjdooo148500000e0</span>
+            </div>
+        </div>
+        
+        <div class="rodape">
+            <strong>Governo Federal do Brasil</strong><br>
+            Certificado oficial emitido pela Polícia Federal - ES
+        </div>
     </div>
-    <p style="margin-top: 30px;">Página ativa! [file:1]</p>
 </body>
 </html>
